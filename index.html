@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Binary Calculator</h1>
+        <p>Use the following calculator to perform addition, subtraction, multiplication, or division of two binary values, as well as convert binary values to decimal and vice versa.</p>
+        
+        <!-- Binary Calculation Section -->
+        <div class="calc-section">
+            <h2>Binary Calculation—Add, Subtract, Multiply, or Divide</h2>
+            <input type="text" id="binary1" placeholder="Binary 1">
+            <select id="operation">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="text" id="binary2" placeholder="Binary 2">
+            <button onclick="calculateBinary()">Calculate</button>
+            <p id="resultBinary">Result: </p>
+        </div>
+
+        <!-- Convert Binary to Decimal Section -->
+        <div class="calc-section">
+            <h2>Convert Binary Value to Decimal Value</h2>
+            <input type="text" id="binaryToDecimal" placeholder="Binary Value">
+            <button onclick="convertToDecimal()">Calculate</button>
+            <p id="resultDecimal">Result: </p>
+        </div>
+
+        <!-- Convert Decimal to Binary Section -->
+        <div class="calc-section">
+            <h2>Convert Decimal Value to Binary Value</h2>
+            <input type="text" id="decimalToBinary" placeholder="Decimal Value">
+            <button onclick="convertToBinary()">Calculate</button>
+            <p id="resultBinaryConv">Result: </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
